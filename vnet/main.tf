@@ -2,10 +2,10 @@ provider "azurerm" {
 features {}
 }
 
-module "mssqldb" {
-source = "git::https://github.com/coolraku/terraform//sqldb/AzureSQLDBModule"
+module "vnet" {
+source = "git::https://github.com/coolraku/terraformsample//vnetmodule"
 
 #name = var.sp_name
-resource_group_name = var.rg_name
+#resource_group_name = var.rg_name
 
 }
